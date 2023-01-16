@@ -42,6 +42,7 @@ public class Admin_Main {
                     System.out.println("Enter your choice:");
                     int k = inobj.nextInt();
                     int p=a1.get_p(Ann);
+                    String dummy = inobj.nextLine();
                     System.out.println("Enter your Value:");
                     String val = inobj.nextLine();
                     if(k==0){
