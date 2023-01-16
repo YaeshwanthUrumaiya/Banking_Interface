@@ -24,8 +24,7 @@ public class Admin_Main {
             System.out.println("1. Loan");
             System.out.println("2. Delete Account");
             System.out.println("3. Update Account");
-            System.out.println("4. Revert Missed EMI");
-            System.out.println("5. Quit");
+            System.out.println("4. Quit");
             System.out.println("*********************************************************************************************");
             System.out.println("Enter your choice:");
             int c = inobj.nextInt();
@@ -65,10 +64,6 @@ public class Admin_Main {
                     }
                     break;
                 case 4:
-                    a1.reverterror(Ann);
-                    System.out.println("You have paid the EMI! Try to pay on time from next month!");
-                    break;
-                case 5:
                     totalq=0;
                     break;
             }

@@ -227,15 +227,4 @@ public class Admin {
         }
     }
 
-    public void reverterror(String AN){
-        int p = get_p(AN);
-
-        double[] Temp_Status=f1.readDouble(5);
-
-        double status = Temp_Status[p];
-
-        status=Math.abs(status)-1;
-        Update_Value(5,p,status);
-    }
-
 }
