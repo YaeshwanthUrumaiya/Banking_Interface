@@ -163,7 +163,7 @@ public class User_UI {
         t4fb.setBounds(150,330,100,30);
 
 
-        t1l1.setBounds(35,250,310,20);//error
+        t1l1.setBounds(35,250,310,20);// for error
         t1l2.setBounds(35,50,395,20);
         t1l3.setBounds(35,100,395,20);
         t1l4.setBounds(35,150,395,20);
@@ -342,7 +342,6 @@ public class User_UI {
 
                     switch (k) {
                         case -1 -> l10.setText("Your account number is under (or) over 10 digits!");
-                        //1234567819
                         case -2 -> l10.setText("The account number already exists!");
                         case -3 -> l10.setText("you have inputted Characters instead of digits, Please try again!");
                         case -4 -> l10.setText("The Password is less than 6 characters, Please Try again.");

@@ -101,9 +101,6 @@ public class Accounts{
 
         createACC(AccNumm, PW, firstdp, cs);
         return 1;
-        //all of the arrays are stored in admin class, so to update that, there should be another function here called,
-        //which updates the arrays in admin class.
-
     }
 
     public int LogIn(String AN,String PW)  {

@@ -45,7 +45,7 @@ public class Admin_Main {
                     String dummy = inobj.nextLine();
                     System.out.println("Enter your Value:");
                     String val = inobj.nextLine();
-                    if(k==0){
+                    if(k==1){
                         if ((val.length() == 10)&&((Arrays.asList(b1.Acc_Num).contains(val)))){
                             int flag=0;
                             for (int i = 0; i < 10; i++) {
@@ -59,7 +59,7 @@ public class Admin_Main {
                             } else{System.out.println("Error");}
                         } else{System.out.println("Error");}
                     }
-                    else if(k==1){
+                    else if(k==2){
                         if (val.length() >= 6) {
                             a1.Update_Value(1,p,val);
                         } else{System.out.println("Error");}
