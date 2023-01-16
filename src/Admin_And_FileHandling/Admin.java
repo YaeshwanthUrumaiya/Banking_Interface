@@ -214,7 +214,12 @@ public class Admin {
             if(status!=0){
                 if(Temp_bal[p]<Temp_EMI[p]){
                     status=-1*status;
-                    cs=Math.abs(cs-10);
+                    if(cs>10){
+                        cs=cs-10;
+                    }
+                    else{
+                        cs=0;
+                    }
                     Update_Value(3,p,cs);
                     Update_Value(5,p,status);
                     return;
@@ -223,6 +228,10 @@ public class Admin {
                 status=status-1;
                 Update_Value(2,p,bal);
                 Update_Value(5,p,status);
+                if(status==0){
+                    cs=cs+20;
+                    Update_Value(3,p,cs);
+                }
             }
         }
     }
