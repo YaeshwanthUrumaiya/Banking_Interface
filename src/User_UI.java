@@ -427,7 +427,10 @@ public class User_UI {
 
                     String[] k = k1.Display();
 
+                    t1l1.setVisible(false);
+
                     if(!(k[0].equals("null"))){
+                        t1l1.setVisible(true);
                         t1l1.setText("You Have MISSED an EMI PAYMENT! Pay it right away!");
                     }
                     t1l2.setText(k[1]);
