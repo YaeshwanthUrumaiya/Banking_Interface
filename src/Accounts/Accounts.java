@@ -5,11 +5,11 @@ import java.util.Arrays;
 
 public class Accounts{
     public int n;
-    public static String[] Acc_Num;//all of these are kinda excessive. so when you store them in admin class, try to slim it down here.
+    public static String[] Acc_Num;
     public static String[] Acc_Password;
     public static double[] bal;
     public static double[] creditScore;
-    public static double[] emi; //the default value is set as 0 for all of the 100 accounts.
+    public static double[] emi; 
     public static double[] Status;
     public static int errorFlag = 0;
     public boolean logInFlag = false;
@@ -39,7 +39,7 @@ public class Accounts{
         n=Acc_Num.length;
     }
 
-    public void createACC(String a, String b, double c, double d){//This is to directly input the values from the admin's side!//change this as well.
+    public void createACC(String a, String b, double c, double d){//This is to directly input the values from the admin's side!
         f1.updateString(0,a);
         f1.updateString(1,b);
         f1.updateDouble(2,c);
