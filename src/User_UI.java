@@ -466,7 +466,7 @@ public class User_UI {
 
                     switch (k) {
                         case -1 -> t2l2.setText("You don't have enough funds!");
-                        case 1 -> t2l2.setText("You have Withdrawal the money!");
+                        case 1 -> t2l2.setText("Your money has been withdrawn!");
                     }
                 }catch(Exception ignored){};
             }
